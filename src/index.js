@@ -1,3 +1,7 @@
-import('./render').then(exports => {
-    exports.render()
-})
+import { math } from "micromark-extension-math";
+
+console.log(math);
+
+import("katex").then((katex) => {
+  console.log(katex);
+});
